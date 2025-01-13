@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e2e2e8;
+  background: linear-gradient(45deg, #381585, #82c222);
+}
+
+/* lineargradient styling */
+button {
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  color: #e2e2e8;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 30px;
+}
+#myButton1 {
+}
+#myButton2 {
+}
+.pickOption {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #000000;
+}
+
+h2 {
+  margin: 5px;
+  font-size: 1em;
+  text-align: left;
+  color: #ddddf7;
+  text-transform: capitalize;
+}
+.codebox {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 4px;
+  border-radius: 5px;
+  border-left: 2px solid #e2e2e8;
+  width: 450px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  color: #000004;
+  font-size: 25px;
+}
+
+/* for tablet screen */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  button {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .codebox {
+    width: 350px;
+    height: 45px;
+    font-size: 18px;
+  }
+  .pickOption {
+    margin-bottom: 10px;
+  }
+}
+/* for smartphone screen */
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  button {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+  }
+  h2 {
+    margin: 5px;
+    font-size: 0.5em;
+  }
+  .codebox {
+    width: 290px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .pickOption {
+    margin-bottom: 5px;
+  }
+}
+/* for small screen */
+@media screen and (max-width: 480px) and (min-width: 240px) {
+  button {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .codebox {
+    width: 250px;
+    height: 25px;
+    font-size: 12px;
+  }
+  h2 {
+    margin: 5px;
+    font-size: 0.4em;
+  }
+}
+/* for mini screen */
+@media screen and (max-width: 240px) {
+  button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .codebox {
+    width: 210px;
+    height: 15px;
+
+    font-size: 8px;
+  }
+  h2 {
+    margin: 5px;
+    font-size: 0.1em;
+  }
+}
